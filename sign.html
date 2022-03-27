@@ -29,17 +29,25 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
-
+body {
+    background-image: url("https://www.itl.cat/pngfile/big/290-2901761_peace-sign-backgrounds-for-desktop-peace-sign-hand.jpg");
+    background-color: #cccccc;
+    background-size:100%;
+    background-attachment:fixed ;
+   }
 /* Set a style for all buttons */
 button {
   background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  font-size: 16px;
+  margin: 40px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  padding: 8px;
+  width:100%;
   opacity: 0.9;
+  align-content: center
+  ;
 }
 
 button:hover {
@@ -48,7 +56,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .skipbtn {
-  padding: 14px 20px;
+  
   background-color: blue;
 }
 
@@ -134,8 +142,8 @@ button:hover {
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="skipbtn" >Skip</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="skipbtn" id ="myBtn" >Skip</button>
+      <button type="submit" class="signupbtn" id ="myBtn">Sign Up</button>
     </div>
     <p>if you want to updated for scholarship,please sign up!!</div>
 
@@ -158,12 +166,17 @@ button:hover {
     
         <div class="clearfix">
         
-          <button type="submit" class="loginbtn"><a href="http://127.0.0.1:5500/Scholarship_Project/Index.html#" >LOG IN</a></button>
+          <button type="submit" class="loginbtn" id ="myBtn">LOG IN</button>
         </div>
        </div>
     
   </div>
 </form>
-
+<script>
+  document.getElementById("myBtn").addEventListener("click", myFunction);
+  function myFunction() {
+    window.location.href="http://127.0.0.1:5500/Scholarship_Project/Index.html#";
+  }
+</script>
 </body>
 </html>
